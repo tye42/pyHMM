@@ -61,7 +61,7 @@ We want to use a HMM to model the motif then search motifs in new sequences.
 
 For a *k*-length motif, the HMM has two regions: *Background* and *Motif.* *Background* consists of four states A, C, G and T, and the four states are fully connected, allow transition between any of the states. *Motif* consists of *k* states, for 1st, 2nd, ..., *k*-th positions in a *k*-length motif, the transition could only happend in the order of 1st to 2nd, 2nd to 3rd, etc., except for *k*-th could transit to 1st. Any state in *Background* could transit to 1st state in *Motif*, and *k*-th state in *Motif* could transit to any state in *Background*. The start state could transit to any state in *Background* and 1st state in *Motif*.
 
-![HMM model](images/motifmodel.png)
+<img src="images/motifmodel.png" width="500">
 
 Training data was obtained from TFBS (**T**ranscription **F**actor **B**inding **S**ite) profile database [JASPAR](http://jaspar.genereg.net/), and HMM was trained on the training data using Baum-Welch algorithm.
 
